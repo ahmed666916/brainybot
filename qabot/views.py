@@ -5,3 +5,6 @@ from django.http import HttpResponse
 
 def qabot(request):
     return HttpResponse("Hello World!")
+
+def index(request):
+    return render(request, 'qabot/index.html')
